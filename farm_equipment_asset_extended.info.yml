@@ -1,0 +1,8 @@
+name: Equipment Asset Extended
+description: An extended farmOS equipment asset
+type: module
+package: farmOS Contrib
+core_version_requirement: ^10
+dependencies:
+  - farm:farm_equipment
+  - farm:farm_product_type

@@ -12,7 +12,7 @@ function farm_equipment_asset_extended_farm_entity_bundle_field_info(EntityTypeI
   // 'equipment' specifies the bundle.
   if ($entity_type->id() == 'asset' && $bundle == 'equipment') {
     // Options for the new field. See Field options below.
-    $options = [
+    $field_info = [
       'type' => 'entity_reference',
       'label' => t('Equipment type'),
       'description' => t('Enter the type of equipment.'),
@@ -25,9 +25,7 @@ function farm_equipment_asset_extended_farm_entity_bundle_field_info(EntityTypeI
         'view' => 10,
       ],
     ];
-    foreach ($options as $name => $info) {
-        $fields[$name] = \Drupal::service('farm_field.factory')->bundleFieldDefinition($info);
-    }    
-  return $fields;
+    $fields['equipment_type'] = \Drupal::service('farm_field.factory')->bundleFieldDefinition($options);
   }
+  return $fields;
 }

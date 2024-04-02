@@ -29,4 +29,5 @@ function farm_equipment_asset_extended_farm_entity_bundle_field_info(EntityTypeI
         $fields[$name] = \Drupal::service('farm_field.factory')->bundleFieldDefinition($info);
     }    
   return $fields;
+  }
 }

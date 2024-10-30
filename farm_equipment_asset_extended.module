@@ -18,6 +18,7 @@ function farm_equipment_asset_extended_farm_entity_bundle_field_info(EntityTypeI
       'description' => t('Enter the type of equipment.'),
       'target_type' => 'taxonomy_term',
       'target_bundle' => 'equipment_type',
+      'multiple' => TRUE,
       'auto_create' => TRUE,
       'required' => TRUE,
       'weight' => [

@@ -20,7 +20,7 @@ function farm_equipment_asset_extended_farm_entity_bundle_field_info(EntityTypeI
       'target_bundle' => 'equipment_type',
       'multiple' => TRUE,
       'auto_create' => TRUE,
-      'required' => TRUE,
+      'required' => FALSE,
       'weight' => [
         'form' => 10,
         'view' => 10,
